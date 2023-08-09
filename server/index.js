@@ -1,3 +1,5 @@
-import { startApolloServer } from "./app";
+import { startApolloServer } from "./app.js";
+import {typeDefs} from './graphql/typeDef.js'
+import {resolvers} from './graphql/resolvers.js'
 
-startApolloServer();
+startApolloServer(typeDefs, resolvers);
